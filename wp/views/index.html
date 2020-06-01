@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+<section id="intro">
+
+  <header>
+    <a href="/">
+      <img src="/logoCasaCriativa.png" alt="Imagem da Logomarca">
+    </a>
+  
+  </header>
+
+  <main>
+    <p>
+      Ficar em casa em períodos longos, não deve ser nada fácil.
+    </p>
+
+    <p>
+      Por isso, iremos catalogar ideias de <strong> brincadeiras, jogos, filmes,
+      livros, cursos, dicas</strong> e tudo que for necessário para tornar
+      esse momento mais interessante.
+    </p>
+
+    <p>
+      Comece clicando em ver ideias para ver as 
+      ideias cadastradas e contribua adicionando as suas ideias.
+    </p>
+  </main>
+
+  <section id="buttons">
+    <button onclick="onOff()">+ Adicionar Ideia</button>
+    <a href="/ideas" class="button">Ver Ideias</a>
+  </section>
+  
+  <footer>
+    Com ❤ <a href="http://rocketseat.com.br" target="_blank">RocketSeat</a>
+  </footer>
+
+</section>
+
+<section id="last-ideas">
+
+{% include "all_ideas.html" %}
+
+</section>
+
+{% endblock %}
